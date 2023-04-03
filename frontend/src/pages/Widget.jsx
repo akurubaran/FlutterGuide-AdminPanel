@@ -28,6 +28,10 @@ function Widget() {
       title: "Widget Description",
       dataIndex: "widgetDescription",
     },
+    {
+      title: "Widget URL",
+      dataIndex: "widgetURL",
+    },
   ];
   const dataTableColumns = [
     {
@@ -41,6 +45,10 @@ function Widget() {
     {
       title: "Widget Description",
       dataIndex: "widgetDescription",
+    },
+    {
+      title: "Widget URL",
+      dataIndex: "widgetURL",
     },
   ];
 

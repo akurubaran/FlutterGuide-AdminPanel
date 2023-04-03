@@ -22,6 +22,10 @@ const widgetSchema = new mongoose.Schema({
 		type: String,
 		trim: true,
 	},
+	widgetURL: {
+		type: String,
+		trim: true,
+	},
 });
 
 module.exports = mongoose.model("widget", widgetSchema);

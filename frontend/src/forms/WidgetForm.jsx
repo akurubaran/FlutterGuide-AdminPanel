@@ -77,6 +77,10 @@ export default function WidgetForm({ isUpdateForm = false }) {
       <Form.Item label="Widget Code" name="widgetCode">
         <TextArea rows={14} />
       </Form.Item>
+
+      <Form.Item label="Widget YouTube URL" name="widgetURL">
+        <Input />
+      </Form.Item>
     </>
   );
 }
