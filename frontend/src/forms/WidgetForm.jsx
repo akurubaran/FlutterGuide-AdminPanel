@@ -6,9 +6,7 @@ const { TextArea } = Input;
 
 export default function WidgetForm({ isUpdateForm = false }) {
   /* Dropdown Button to Select Category */
-  const [widgetCategory, setWidgetCategory] = useState([
-    "WIDGET OF THE WEEK"
-  ]);
+  const [widgetCategory, setWidgetCategory] = useState(["WIDGET OF THE WEEK"]);
   const [name, setName] = useState("");
   const inputRef = useRef(null);
   const onNameChange = (event) => {
@@ -16,7 +14,7 @@ export default function WidgetForm({ isUpdateForm = false }) {
   };
   const addItem = (e) => {
     e.preventDefault();
-    setRestaurant([...restaurants, name || `New item ${index++}`]);
+    setWidgetCategory([...widgetCategory, name || `New item ${index++}`]);
     setName("");
     setTimeout(() => {
       inputRef.current?.focus();
@@ -38,7 +36,7 @@ export default function WidgetForm({ isUpdateForm = false }) {
           },
         ]}>
         <Select
-          placeholder="Select Restaurant"
+          placeholder="Select Widget Category"
           dropdownRender={(menu) => (
             <>
               {menu}
@@ -69,7 +67,7 @@ export default function WidgetForm({ isUpdateForm = false }) {
           }))}
         />
       </Form.Item>
-      
+
       <Form.Item label="Widget Description" name="widgetDescription">
         <TextArea rows={4} />
       </Form.Item>

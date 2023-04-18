@@ -46,10 +46,6 @@ function Widget() {
       title: "Widget Description",
       dataIndex: "widgetDescription",
     },
-    {
-      title: "Widget URL",
-      dataIndex: "widgetURL",
-    },
   ];
 
   const ADD_NEW_ENTITY = "Add New Widget";
